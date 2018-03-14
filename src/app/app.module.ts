@@ -8,19 +8,19 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { ListingsComponent } from './listings/listings.component';
-import { ListingsService } from './listings/listings.service';
+import { NotFoundComponent } from './not-found.component';
+import { ListingsListModule } from './listings-list/listings-list.module';
 
 @NgModule({
-  declarations: [AppComponent, ListingsComponent],
+  declarations: [AppComponent, NotFoundComponent],
   imports: [
     BrowserModule,
+    ListingsListModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTableModule,
     HttpModule
   ],
-  providers: [ListingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

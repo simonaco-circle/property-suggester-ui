@@ -11,7 +11,11 @@ const API_URL = 'https://ukrent.azurewebsites.net/api/RentalsService';
 export class ListingsService {
   constructor(private http: Http) {}
 
-  getListings(area: string, listing_status: string, order_by: string) {
+  getListings(
+    area: string,
+    listing_status: string,
+    order_by: string
+  ): Observable<any> {
     const options = new RequestOptions({
       params: {
         area: area,
