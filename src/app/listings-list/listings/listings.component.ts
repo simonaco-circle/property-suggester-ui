@@ -15,7 +15,7 @@ export class ListingsComponent implements OnInit {
   ngOnInit() {
     this.listingService.getListings('oxford', 'rent', 'age').subscribe(data => {
       console.log(data);
-      this.listings = data;
+      this.listings = data.listings;
     });
   }
 }

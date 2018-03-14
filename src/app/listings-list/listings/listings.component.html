@@ -1,3 +1,6 @@
-<p>
-  listings works!
-</p>
+<mat-list>
+  <mat-list-item *ngFor="let listing of listings.listing">
+    <h4 mat-line>{{listing.short_description}}</h4>
+    <p mat-line> {{listing.last_published_date | date}} </p>
+  </mat-list-item>
+</mat-list>
