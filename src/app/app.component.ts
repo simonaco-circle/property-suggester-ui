@@ -8,6 +8,7 @@ import { Nav } from './nav.model';
 })
 export class AppComponent {
   title = 'app';
+
   nav: Nav[] = [
     {
       link: '/',
