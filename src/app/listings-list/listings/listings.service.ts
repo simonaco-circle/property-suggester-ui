@@ -14,13 +14,17 @@ export class ListingsService {
   getListings(
     area: string,
     listing_status: string,
-    order_by: string
+    order_by: string,
+    maximum_price: number,
+    minimum_beds: string
   ): Observable<any> {
     const options = new RequestOptions({
       params: {
         area: area,
         listing_status: listing_status,
-        order_by: order_by
+        order_by: order_by,
+        maximum_price: maximum_price,
+        minimum_beds: minimum_beds
       }
     });
     return this.http

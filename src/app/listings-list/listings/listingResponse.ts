@@ -3,6 +3,6 @@ import { Listing } from './listing';
 export class ListingResponse {
   country: string;
   area_name: string;
-  listing: Listing[];
+  apartments: Listing[];
   result_count: number;
 }

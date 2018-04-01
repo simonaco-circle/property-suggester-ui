@@ -13,9 +13,11 @@ export class ListingsComponent implements OnInit {
   constructor(private listingService: ListingsService) {}
 
   ngOnInit() {
-    this.listingService.getListings('oxford', 'rent', 'age').subscribe(data => {
-      console.log(data);
-      this.listings = data.listings;
-    });
+    this.listingService
+      .getListings('Angel', 'rent', 'age', 450, '2')
+      .subscribe(data => {
+        console.log(data);
+        this.listings = data.listings;
+      });
   }
 }
