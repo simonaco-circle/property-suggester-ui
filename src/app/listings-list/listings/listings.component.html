@@ -8,8 +8,8 @@
         <p mat-line> Last updated: {{listing.last_published_date | date:'medium'}} </p>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
+        <a mat-button [href]="listing.details_url" target="blank">View property</a>
+        <button mat-button (click)="save(listing)">Save for later</button>
       </mat-card-actions>
     </mat-card>
   </mat-grid-tile>

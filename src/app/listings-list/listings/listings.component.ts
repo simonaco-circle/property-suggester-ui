@@ -10,6 +10,7 @@ import { ListingResponse } from './listingResponse';
 })
 export class ListingsComponent implements OnInit {
   listings: ListingResponse;
+  saved;
   constructor(private listingService: ListingsService) {}
 
   ngOnInit() {
@@ -19,5 +20,9 @@ export class ListingsComponent implements OnInit {
         console.log(data);
         this.listings = data.listings;
       });
+  }
+
+  save(listing) {
+    this.saved = [...this.saved, listing];
   }
 }

@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AgmCoreModule } from '@agm/core';
 
@@ -31,6 +32,7 @@ const routes = [
     MatGridListModule,
     MatCardModule,
     MatInputModule,
+    MatButtonModule,
     RouterModule.forChild(routes),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBPWcL09h0Zqug5FwEs_A8Mbwg0KJArq8k'
