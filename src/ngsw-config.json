@@ -20,13 +20,13 @@
   ],
   "dataGroups": [
     {
-      "name": "api-freshness",
+      "name": "api-performance",
       "urls": ["https://ukrent.azurewebsites.net/api/**"],
       "cacheConfig": {
         "maxSize": 100,
         "maxAge": "1d",
         "timeout": "1m",
-        "strategy": "freshness"
+        "strategy": "performance"
       }
     }
   ]
