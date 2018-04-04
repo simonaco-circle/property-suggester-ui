@@ -23,7 +23,7 @@
       "name": "api-performance",
       "urls": ["https://ukrent.azurewebsites.net/api/**"],
       "cacheConfig": {
-        "maxSize": 100,
+        "maxSize": 1000000,
         "maxAge": "1d",
         "timeout": "1m",
         "strategy": "performance"
